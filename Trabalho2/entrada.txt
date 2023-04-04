@@ -1,0 +1,17 @@
+{- programa le uma sequencia de numeros inteiros
+e encontra o maior -}
+Program exemplo;
+	number num, maior, cont, qtd;
+begin
+	read(qtd);
+	set cont to 0;
+	set maior to 0; // inicializa a variavel maior com 0
+	while( cont < qtd ) do
+	begin
+		read(num);
+		if( num > maior ) then
+			set maior to num;
+		set cont to cont + 1
+	end;
+	write(maior) // imprime o maior valor
+end.
